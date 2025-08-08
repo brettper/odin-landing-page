@@ -6,7 +6,7 @@ body {
     flex-direction: column;
 }
 
-.header, .hero {
+.header, .hero, .cta {
     display: flex;
     align-items: center;
     padding: 0px 40px;
@@ -58,6 +58,7 @@ body {
     padding: 8px 20px;
     border-radius: 10px;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     border: 0px solid #eee;
@@ -67,7 +68,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex: 1;
+    margin-bottom: 40px;
 }
 
 .body h2 {
@@ -78,23 +81,40 @@ body {
 
 .container {
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
     flex: 1;
 }
 
-.image img {
+.item {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.item img {
     border-color: blue;
     border-radius: 5%;
     border-style: solid;
-    width: 120px;
     height: 120px;
-}
-
-.cta {
-    background-color: #E5E7EB;
 }
 
 .quote {
     background-color: #E5E7EB;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quoter {
+    font-weight: 600;
+    align-self: flex-end;
+    padding-right: 80px;
 }
 
 blockquote {
@@ -104,9 +124,32 @@ blockquote {
     color: #1F2937;
 }
 
+.cta {
+    background-color: #3882F6;
+    margin: 50px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #F9FAF8;
+}
+
+.cta .main {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cta .signup {
+    border-color: #F9FAF8;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
 .footer {
     height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 10px;
 }
